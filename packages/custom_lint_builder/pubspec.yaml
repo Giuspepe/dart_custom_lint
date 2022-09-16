@@ -12,8 +12,11 @@ dependencies:
   collection: ^1.16.0
   # Using tight constraints as custom_lint_builder communicate with each-other
   # using a specific contract
-  custom_lint:
-    path: ../custom_lint
+  custom_lint: 
+    git:
+        url: https://github.com/Giuspepe/dart_custom_lint
+        ref: ci_fix
+        path: packages/custom_lint
   meta: ^1.7.0
   package_config: ^2.0.2
   path: ^1.8.0
